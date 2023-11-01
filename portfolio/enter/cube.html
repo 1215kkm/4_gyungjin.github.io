@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>CUBE Entertainment</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+		<style>
+			.cubeBox {width: 300px; height: 300px; perspective: 800px; transform: scale(0.2) rotate(-20deg);}
+			.cubeBox .cube {width: inherit; height: inherit; position: absolute; transform-style:preserve-3d; animation:cubeR 5s infinite linear; transform: rotateX(-20deg) rotateY(26deg);}
+			@keyframes cubeR {
+				from {transform:rotateX(-20deg) rotateY(26deg);}
+				to {transform:rotateX(340deg) rotateY(26deg);}
+			}
+			.cubeBox .cube span {display: block; width: inherit; height: inherit; position: absolute; text-align: center; line-height: 300px; opacity: 0.8}
+			.cubeBox .cube span.top {transform: rotateX(90deg) translateZ(150px); background:linear-gradient(90deg, #112d90,#38c8f0)}
+			.cubeBox .cube span.bottom {transform: rotateX(-90deg) translateZ(150px); background:linear-gradient(-90deg, #112d90,#38c8f0); }
+			.cubeBox .cube span.right {transform: rotateY(90deg) translateZ(150px); background:linear-gradient(90deg, #112d90,#38c8f0); }
+			.cubeBox .cube span.left {transform: rotateY(-90deg) translateZ(150px); background:linear-gradient(-90deg, #112d90,#38c8f0); }
+			.cubeBox .cube span.front {transform: translateZ(150px); background:linear-gradient(-90deg, #112d90,#38c8f0)}
+			.cubeBox .cube span.back {transform: translateZ(-150px) rotateY(180deg); background:linear-gradient(180deg, #112d90, #38c8f0); }
+
+
+		</style>
+</head>
+<body>
+
+
+
+
+		<div class="cubeBox">
+			<div class="cube">
+				<span class="top"></span>
+				<span class="bottom"></span>
+				<span class="right"></span>
+				<span class="left"></span>
+				<span class="front"></span>
+				<span class="back"></span>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="script/action.js"></script>
+	
+</body>
+</html>
+
+
+
+
